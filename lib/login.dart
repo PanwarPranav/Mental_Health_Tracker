@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Q1.dart';
 
-class Login extends StatelessWidget {
+class login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
@@ -51,26 +51,17 @@ class Login extends StatelessWidget {
                           )
                       ),
                     ),
-                   /* Card(
-                      color: Colors.lightBlue,
-                          child:ElevatedButton(
-                            onPressed: (){
-                              Navigator.push(context,MaterialPageRoute(builder:
-                              } context{return Q1();
-                              )
-                          );
-                              },
-                            child: Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Text('Sign In',
-                                style: TextStyle(
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
+                    Center(
+                      child: Padding(
+                        padding: EdgeInsets.all(15.0),
+                        child:Text('NEXT',
+                            style: TextStyle(
+                                fontSize: 20.0
                             ),
-                          )
-                    ),*/
+                          ),
+                      ),
+                    ),
+
                   ],
               ),
             ),

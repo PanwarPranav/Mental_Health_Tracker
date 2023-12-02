@@ -9,12 +9,23 @@ class start extends StatelessWidget {
       backgroundColor: Colors.white12,
       body: SafeArea(
         child: Container(
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('images/back2.jpg'),
+                fit: BoxFit.cover,
+
+              )
+          ),
+          constraints: BoxConstraints.expand(),
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
+                  //crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
+                    SizedBox(height: 125,),
                     Container(
                       width: 350,
+
                       decoration: BoxDecoration(
                         color: Colors.white24,
                         borderRadius: BorderRadius.circular(10.0),
@@ -30,18 +41,19 @@ class start extends StatelessWidget {
                         ),
                         ),
                       ),
-                    ),
+                    ),//Text
                     SizedBox(
-                      width:200.0,height: 500,
+                      width:200.0,height: 400,
                     ),
                     Container(
                       decoration: BoxDecoration(
-                        color: Colors.lightBlue,
+                        //color: Colors.orange,
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: ElevatedButton(
+
                           child: Text("Test",
                             style: TextStyle(
                               color:Colors.black,
@@ -51,11 +63,11 @@ class start extends StatelessWidget {
                             ),
                           ),
                           onPressed: (){
-                          Navigator.pushNamed(context, '/Q1');
+                          Navigator.pushNamed(context, '/question');
                           },
                         ),
                       ),
-                    ),
+                    ),//BUTTON
                   ],
             ),
           ),

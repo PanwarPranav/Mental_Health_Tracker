@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:huhu/Questions.dart';
+import 'package:huhu/login_1.dart';
 import 'login.dart';
 import 'Q1.dart';
 import 'Q2.dart';
@@ -20,13 +22,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: '/',
       routes: {
-        '/': (context) => Login(),
+        '/': (context) => login_1(),
         '/start': (context) => start(),
-        '/Q1': (context) => Q1(),
-        '/Q2': (context) => Q2(),
-        '/Q3': (context) => Q3(),
-        '/Q4': (context) => Q4(),
-       // '/out': (context) => output(),
+        // '/Q1': (context) => Q1(),
+        // '/Q2': (context) => Q2(),
+        // '/Q3': (context) => Q3(),
+        // '/Q4': (context) => Q4(),
+
+        '/question': (context) => questions(),
 
       },
 

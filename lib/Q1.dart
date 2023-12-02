@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'output.dart';
 import 'Q2.dart';
+import 'Brain.dart';
 
 class Q1 extends StatefulWidget {
 
@@ -11,7 +12,7 @@ class Q1 extends StatefulWidget {
 
 class _Q1State extends State<Q1> {
   @override
-  int people = 5;
+   int people = 5;
 
   Widget build(BuildContext context) {
 
@@ -85,6 +86,7 @@ class _Q1State extends State<Q1> {
                       onChanged: (double newVal){
                         setState(() {
                           people=newVal.toInt();
+
                         });
 
                       },
